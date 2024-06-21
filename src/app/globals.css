@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+.hero {
+  @apply p-2   text-center;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-500 font-bold;
+}
+
+button {
+  @apply rounded flex items-center justify-center text-zinc-100 h-10 transition-opacity hover:opacity-80;
+}
+
+.button-primary {
+  @apply bg-violet-700;
+}
+
+.button-secondary {
+  @apply border-violet-700 border bg-transparent;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 9999px;
+}
